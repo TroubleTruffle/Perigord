@@ -1,4 +1,3 @@
-﻿set(CMAKE_TOOLCHAIN_FILE "C:/dev/tools/vcpkg/scripts/buildsystems/vcpkg.cmake")
 cmake_minimum_required (VERSION 3.19.0)
 project ("Perigord")
 
