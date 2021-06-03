@@ -1,8 +1,12 @@
 #version 330 core
 
-layout(location = 0) out vec3 color;
+layout(location = 0) out vec4 color;
+
+in vec3 vertexColor;
+
+uniform vec4 uColor;
 
 void main()
 {
-	color = vec3(0.8, 0.5, 0);
+	color = vec4(uColor.rgb * vertexColor, uColor.a);
 };
