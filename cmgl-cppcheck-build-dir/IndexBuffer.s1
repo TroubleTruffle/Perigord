@@ -1,0 +1,5 @@
+getCount
+IndexBuffer call:[glBindBuffer,glBufferData,glGenBuffers,sizeof] noreturn:[glBufferData]
+IndexBuffer call:[glDeleteBuffers] noreturn:[glDeleteBuffers]
+bind call:[glBindBuffer] noreturn:[glBindBuffer]
+unbind call:[glBindBuffer] noreturn:[glBindBuffer]

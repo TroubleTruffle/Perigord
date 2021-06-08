@@ -1,0 +1,8 @@
+_glewStrLen
+_glewStrCLen
+_glewStrCopy
+_glewStrSame call:[return]
+_glewStrSame1
+_glewStrSame2
+_glewStrSame3
+_glewSearchExtension call:[_glewStrCLen,_glewStrLen,_glewStrSame]

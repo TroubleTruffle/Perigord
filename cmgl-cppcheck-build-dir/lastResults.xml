@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.4.1"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;OpenGL::m_ShaderProgram&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;OpenGL::m_ShaderProgram&amp;#039; is not initialized in the constructor." cwe="398" sinceDate="05/06/2021">
+            <location file0="src/Renderer/OpenGL.cpp" file="src\Renderer\OpenGL.cpp" line="3"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;Path&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;Path&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" sinceDate="05/06/2021">
+            <location file0="src/Renderer/OpenGL.cpp" file="src\Renderer\OpenGL.cpp" line="12"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;CreateShader&amp;#039; is never used." verbose="The function &amp;#039;CreateShader&amp;#039; is never used." cwe="561" sinceDate="05/06/2021">
+            <location file="src\Renderer\OpenGL.cpp" line="12"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;filepath&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;filepath&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" sinceDate="05/06/2021">
+            <location file0="src/Renderer/OpenGL.cpp" file="src\Renderer\OpenGL\Shader.h" line="11"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &amp;#039;filepath&amp;#039; should be passed by const reference." verbose="Parameter &amp;#039;filepath&amp;#039; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" sinceDate="05/06/2021">
+            <location file0="src/Renderer/OpenGL/Shader.cpp" file="src\Renderer\OpenGL\Shader.cpp" line="5"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;offset&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;offset&amp;#039; is assigned a value that is never used." cwe="563" sinceDate="05/06/2021">
+            <location file0="src/Renderer/OpenGL/VertexArray.cpp" file="src\Renderer\OpenGL\VertexArray.cpp" line="18"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &amp;#039;offset&amp;#039; is assigned a value that is never used." verbose="Variable &amp;#039;offset&amp;#039; is assigned a value that is never used." cwe="563" sinceDate="05/06/2021">
+            <location file0="src/Renderer/OpenGL/VertexArray.cpp" file="src\Renderer\OpenGL\VertexArray.cpp" line="25"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;addBuffer&amp;#039; is never used." verbose="The function &amp;#039;addBuffer&amp;#039; is never used." cwe="561" sinceDate="05/06/2021">
+            <location file="src\Renderer\OpenGL\VertexArray.cpp" line="13"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;unbind&amp;#039; is never used." verbose="The function &amp;#039;unbind&amp;#039; is never used." cwe="561" sinceDate="05/06/2021">
+            <location file="src\Renderer\OpenGL\VertexBuffer.cpp" line="21"/>
+        </error>
+    </errors>
+</results>

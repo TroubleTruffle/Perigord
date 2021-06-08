@@ -1,0 +1,2 @@
+glewPrintExt global:[f] call:[fflush,fprintf,strlen] noreturn:[fprintf]
+glewInfoFunc global:[f] call:[fflush,fprintf,strlen] noreturn:[fflush,fprintf]

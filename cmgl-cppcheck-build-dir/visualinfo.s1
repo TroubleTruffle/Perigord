@@ -1,0 +1,7 @@
+main global:[file] call:[CreateContext,DefaultScreen,DestroyContext,InitContext,ParseArgs,PrintExtensions,VisualInfo,fclose,fprintf,glGetString,glXGetCurrentDisplay,glXQueryExtensionsString,glewGetErrorString,glewInit,gluGetString] noreturn:[fclose]
+PrintExtensions global:[file] call:[fprintf,strcpy,strlen] noreturn:[fprintf,strcpy]
+VisualInfo global:[file,verbose] call:[DefaultScreen,fprintf,glXGetFBConfigAttrib,glXGetFBConfigs] noreturn:[fprintf]
+InitContext
+CreateContext global:[display] call:[DefaultScreen,RootWindow,XCreateColormap,XCreateWindow,XOpenDisplay,glXChooseVisual,glXCreateContext,glXMakeCurrent,glXQueryExtension]
+DestroyContext call:[XCloseDisplay,XDestroyWindow,XFree,XFreeColormap,glXDestroyContext] noreturn:[XCloseDisplay,XDestroyWindow,XFree,XFreeColormap,glXDestroyContext]
+ParseArgs global:[display,visual] call:[strcmp,strtol] noreturn:[strtol]

@@ -2,7 +2,7 @@
 
 
 
-std::tuple<std::string,std::string> PerigordGL::parseShader(const std::string filepath)
+std::tuple<std::string,std::string> parseShader(const std::string& filepath)
 {
     std::ifstream vertex(filepath + ".vert");
     if (!vertex.is_open()) std::cerr << "Vertex Shader Failed to open" << std::endl;
@@ -25,7 +25,7 @@ std::tuple<std::string,std::string> PerigordGL::parseShader(const std::string fi
     return std::make_tuple(vertexFragment[0].str(), vertexFragment[1].str() );
 }
 
-uint32_t PerigordGL::compileShader(uint32_t type, const std::string& source)
+uint32_t compileShader(uint32_t type, const std::string& source)
 {
     unsigned int id = glCreateShader(type);
     const char* src = source.c_str();
@@ -54,7 +54,7 @@ uint32_t PerigordGL::compileShader(uint32_t type, const std::string& source)
     return id;
 }
 
-uint32_t PerigordGL::createShader(const std::string& vertexShader, const std::string& fragmentShader)
+uint32_t createShader(const std::string& vertexShader, const std::string& fragmentShader)
 {
     unsigned int program = glCreateProgram();
     unsigned int vertShader = compileShader(GL_VERTEX_SHADER, vertexShader);

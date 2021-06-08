@@ -1,8 +1,10 @@
-Set(OPENGL_RENDERER_FILES
-"Shader.cpp"
-)
-
-add_library("PG_OpenGL" STATIC ${OPENGL_RENDERER_FILES} "Shader.h")
+add_library("PG_OpenGL" STATIC 
+	${OPENGL_RENDERER_FILES} 
+	"Shader.cpp"
+	"IndexBuffer.cpp"
+	"VertexArray.cpp"
+	"VertexBuffer.cpp"
+	)
 
 target_include_directories(	"PG_OpenGL" PUBLIC
 	${OPENGL_INCLUDE_DIRS}

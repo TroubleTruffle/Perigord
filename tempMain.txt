@@ -18,9 +18,9 @@ int main(int argc, char* argv[])
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     window = glfwCreateWindow(500, 500, "Truffle", NULL, NULL);
-    glfwMakeContextCurrent(window);
+	glfwMakeContextCurrent(window);
     glewExperimental = true;
-    if (!window)
+	if (!window)
     {
         std::cerr << "failed to make window" << std::endl;
         glfwTerminate();
@@ -41,41 +41,41 @@ int main(int argc, char* argv[])
     -0.5f, -0.5f, 0.0f,     0.0f, 0.0f, 1.0f,   //bottom-left
     -0.5f,  0.5f, 0.0f,     1.0f, 1.0f, 1.0f    //top-left
     };
-    uint32_t VertexArrayID;
-    glGenVertexArrays(1, &VertexArrayID);
-    glBindVertexArray(VertexArrayID);
+    //uint32_t VertexArrayID;
+    //glGenVertexArrays(1, &VertexArrayID);
+    //glBindVertexArray(VertexArrayID);
 
-    uint32_t vertexBuffer;
-    glGenBuffers(1, &vertexBuffer);
-    glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertexBufferArray), vertexBufferArray, GL_STATIC_DRAW);
+    //uint32_t vertexBuffer;
+    //glGenBuffers(1, &vertexBuffer);
+    //glBindBuffer(GL_ARRAY_BUFFER, vertexBuffer);
+    //glBufferData(GL_ARRAY_BUFFER, sizeof(vertexBufferArray), vertexBufferArray, GL_STATIC_DRAW);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(0));
-    glEnableVertexAttribArray(0);
+    //glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(0));
+    //glEnableVertexAttribArray(0);
 
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)) );
-    glEnableVertexAttribArray(1);
+    //glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)) );
+    //glEnableVertexAttribArray(1);
     /*Vertex Array-end--------------------------------*/
 
     /*Index Array----------------------------------*/
     uint32_t indexBufferArray[] =
     {
-    0, 1, 3,
-    1, 2, 3
+    0, 1, 3,   
+    1, 2, 3    
     };
-    uint32_t indexArrayID;
-    glGenBuffers(1, &indexArrayID);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexArrayID);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indexBufferArray), indexBufferArray, GL_STATIC_DRAW);
+    //uint32_t indexArrayID;
+    //glGenBuffers(1, &indexArrayID);
+    //glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexArrayID);
+    //glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indexBufferArray), indexBufferArray, GL_STATIC_DRAW);
     /*Index Array-end---------------------------------*/
 
     /*GLSL shader-------------------------------------*/
-    auto source = parseShader("resources/test"); //exclude file type
-    uint32_t shader = createShader(std::get<0>(source), std::get<1>(source));
-    glUseProgram(shader);
+    //auto source = PerigordGL::parseShader("resources/test"); //exclude file type
+    //uint32_t shader = PerigordGL::createShader(std::get<0>(source), std::get<1>(source));
+    //glUseProgram(shader);
     /*GLSL shader-end------------------------------------*/
 
-    float bgColor[3]{ 0.1f, 0.3f, 0.2f };
+    float bgColor[3]{0.1f, 0.3f, 0.2f};
     glClearColor(bgColor[0], bgColor[1], bgColor[2], 0.0f);
 
     glfwSwapInterval(0);

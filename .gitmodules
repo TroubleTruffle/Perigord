@@ -4,3 +4,6 @@
 [submodule "vendor/glfw"]
 	path = vendor/glfw
 	url = https://github.com/glfw/glfw.git
+[submodule "vendor/Boost"]
+	path = vendor/Boost
+	url = https://github.com/boostorg/boost.git

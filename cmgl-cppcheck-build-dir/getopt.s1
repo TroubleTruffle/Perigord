@@ -1,0 +1,2 @@
+getopt global:[optarg,optcursor,opterr,optind,optopt] call:[strchr,strcmp]
+getopt_long global:[no_argument,optarg,optind,optopt,required_argument] call:[getopt,strchr,strcspn,strlen,strncmp] noreturn:[getopt]

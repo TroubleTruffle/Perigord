@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1194290155">
+  <FileInfo check="Class">
+<class name="VertexBuffer" file="C:/dev/Perigord/src/Renderer/OpenGL/VertexBuffer.hpp" line="3" col="1" hash="5170489714427339170"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="bind" lineNumber="16"/>
+    <functiondecl functionName="unbind" lineNumber="21"/>
+    <functioncall functionName="GL_ARRAY_BUFFER"/>
+    <functioncall functionName="GL_STATIC_DRAW"/>
+    <functioncall functionName="VertexBuffer"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="data"/>
+    <functioncall functionName="glBindBuffer"/>
+    <functioncall functionName="glBufferData"/>
+    <functioncall functionName="glDeleteBuffers"/>
+    <functioncall functionName="glGenBuffers"/>
+    <functioncall functionName="m_RendererID"/>
+    <functioncall functionName="size"/>
+  </FileInfo>
+</analyzerinfo>

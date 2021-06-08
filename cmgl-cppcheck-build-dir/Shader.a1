@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="20756982">
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;filepath&apos; should be passed by const reference." verbose="Parameter &apos;filepath&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="C:\dev\Perigord\src\Renderer\OpenGL\Shader.cpp" file="C:\dev\Perigord\src\Renderer\OpenGL\Shader.cpp" line="5" column="67"/>
+            <symbol>filepath</symbol>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="parseShader" lineNumber="5"/>
+    <functiondecl functionName="compileShader" lineNumber="28"/>
+    <functiondecl functionName="createShader" lineNumber="57"/>
+    <functioncall functionName="GL_COMPILE_STATUS"/>
+    <functioncall functionName="GL_FRAGMENT_SHADER"/>
+    <functioncall functionName="GL_INFO_LOG_LENGTH"/>
+    <functioncall functionName="GL_VERTEX_SHADER"/>
+    <functioncall functionName="_malloca"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="c_str"/>
+    <functioncall functionName="char"/>
+    <functioncall functionName="close"/>
+    <functioncall functionName="compileShader"/>
+    <functioncall functionName="fragShader"/>
+    <functioncall functionName="fragment"/>
+    <functioncall functionName="fragmentShader"/>
+    <functioncall functionName="getline"/>
+    <functioncall functionName="glAttachShader"/>
+    <functioncall functionName="glCompileShader"/>
+    <functioncall functionName="glCreateProgram"/>
+    <functioncall functionName="glCreateShader"/>
+    <functioncall functionName="glDeleteShader"/>
+    <functioncall functionName="glGetShaderInfoLog"/>
+    <functioncall functionName="glGetShaderiv"/>
+    <functioncall functionName="glLinkProgram"/>
+    <functioncall functionName="glShaderSource"/>
+    <functioncall functionName="glValidateProgram"/>
+    <functioncall functionName="id"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="is_open"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="line"/>
+    <functioncall functionName="make_tuple"/>
+    <functioncall functionName="message"/>
+    <functioncall functionName="nullptr"/>
+    <functioncall functionName="program"/>
+    <functioncall functionName="result"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="src"/>
+    <functioncall functionName="str"/>
+    <functioncall functionName="string"/>
+    <functioncall functionName="type"/>
+    <functioncall functionName="vertShader"/>
+    <functioncall functionName="vertex"/>
+    <functioncall functionName="vertexShader"/>
+    <functioncall functionName="while"/>
+  </FileInfo>
+</analyzerinfo>

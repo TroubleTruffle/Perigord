@@ -1,0 +1,4 @@
+VertexBuffer call:[glBindBuffer,glBufferData,glGenBuffers] noreturn:[glBufferData]
+VertexBuffer call:[glDeleteBuffers] noreturn:[glDeleteBuffers]
+bind call:[glBindBuffer] noreturn:[glBindBuffer]
+unbind call:[glBindBuffer] noreturn:[glBindBuffer]

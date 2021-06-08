@@ -1,0 +1,8 @@
+glewPrintExt global:[f] call:[fflush,fprintf,strlen] noreturn:[fprintf]
+glewInfoFunc global:[f] call:[fflush,fprintf,strlen] noreturn:[fflush,fprintf]
+glewInfo
+glxewInfo
+main global:[f] call:[fclose,fprintf,getenv,glGetString,glewCreateContext,glewDestroyContext,glewGetErrorString,glewGetString,glewInfo,glewInit,glewParseArgs,glxewInfo] noreturn:[fclose]
+glewParseArgs call:[sscanf,strcmp,strtol] noreturn:[strtol]
+glewCreateContext global:[cmap,ctx,dpy,vi,vis,wnd] call:[DefaultScreen,RootWindow,XCreateColormap,XCreateWindow,XFree,XGetVisualInfo,XOpenDisplay,XVisualIDFromVisual,glXChooseFBConfig,glXChooseVisual,glXCreateContext,glXCreateContextAttribsARB,glXDestroyContext,glXMakeCurrent,glXQueryContext,glXQueryExtension,glxewGetExtension,glxewInit] noreturn:[XFree,XVisualIDFromVisual]
+glewDestroyContext global:[cmap,ctx,dpy,vi,vis,wnd] call:[XCloseDisplay,XDestroyWindow,XFree,XFreeColormap,glXDestroyContext] noreturn:[XCloseDisplay,XDestroyWindow,XFree,XFreeColormap,glXDestroyContext]

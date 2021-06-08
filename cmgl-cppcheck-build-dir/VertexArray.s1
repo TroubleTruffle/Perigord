@@ -1,0 +1,12 @@
+GetSizeOfType call:[__debugbreak] noreturn:[__debugbreak]
+Push call:[static_assert] noreturn:[static_assert]
+Push < float > call:[GetSizeOfType,push_back] noreturn:[GetSizeOfType]
+Push < unsigned int > call:[GetSizeOfType,push_back] noreturn:[GetSizeOfType]
+Push < unsigned char > call:[GetSizeOfType,push_back] noreturn:[GetSizeOfType]
+GetElements
+GetStride
+VertexArray call:[glGenVertexArrays] noreturn:[glGenVertexArrays]
+VertexArray call:[glDeleteVertexArrays] noreturn:[glDeleteVertexArrays]
+addBuffer call:[GetElements,GetSizeOfType,GetStride,bind,glEnableVertexAttribArray,glVertexAttribPointer,size] noreturn:[GetSizeOfType]
+bind call:[glBindVertexArray] noreturn:[glBindVertexArray]
+unbind call:[glBindVertexArray] noreturn:[glBindVertexArray]

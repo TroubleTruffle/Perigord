@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="2010644382">
+  <FileInfo check="Class">
+<class name="IndexBuffer" file="C:/dev/Perigord/src/Renderer/OpenGL/IndexBuffer.h" line="3" col="1" hash="6598252135951402579"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="bind" lineNumber="20"/>
+    <functiondecl functionName="unbind" lineNumber="24"/>
+    <functioncall functionName="GL_ELEMENT_ARRAY_BUFFER"/>
+    <functioncall functionName="GL_STATIC_DRAW"/>
+    <functioncall functionName="IndexBuffer"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="count"/>
+    <functioncall functionName="data"/>
+    <functioncall functionName="glBindBuffer"/>
+    <functioncall functionName="glBufferData"/>
+    <functioncall functionName="glDeleteBuffers"/>
+    <functioncall functionName="glGenBuffers"/>
+    <functioncall functionName="m_Count"/>
+    <functioncall functionName="m_RendererID"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="uint32_t"/>
+  </FileInfo>
+</analyzerinfo>

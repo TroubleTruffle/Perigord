@@ -1,0 +1,23 @@
+_glewStrLen
+_glewStrCLen
+_glewStrCopy
+_glewStrSame call:[return]
+_glewStrSame1
+_glewStrSame2
+_glewStrSame3
+_glewSearchExtension call:[_glewStrCLen,_glewStrLen,_glewStrSame]
+_glewExtensionCompare
+_glewBsearchExtension global:[_glewExtensionLookup] call:[_glewExtensionCompare,sizeof]
+_glewGetExtensionString global:[_glewExtensionString] call:[_glewBsearchExtension]
+_glewGetExtensionEnable global:[_glewExtensionEnabled] call:[_glewBsearchExtension]
+_glewNextSpace
+_glewNextNonSpace
+glewGetExtension call:[_glewGetExtensionString]
+glewContextInit global:[_glewExtensionString] call:[_glewGetExtensionEnable,_glewGetExtensionString,_glewNextNonSpace,_glewNextSpace,_glewStrCLen,_glewStrCopy,_glewStrLen,getIntegerv,getString,getStringi,sizeof,void] noreturn:[getIntegerv]
+glxewGetExtension call:[_glewSearchExtension,_glewStrLen,glXGetClientString,glXGetCurrentDisplay] noreturn:[_glewSearchExtension]
+glxewInit call:[_glewInit_GLX_VERSION_1_2,_glewStrLen,glXGetClientString,glXGetCurrentDisplay,glXQueryVersion] noreturn:[glXGetClientString]
+glewGetErrorString call:[sizeof]
+glewGetString call:[sizeof]
+glewInit call:[glewContextInit,glxewInit] noreturn:[glxewInit]
+glewIsSupported call:[_glewStrLen,_glewStrSame1,_glewStrSame2]
+glxewIsSupported call:[_glewStrLen,_glewStrSame1,_glewStrSame2]

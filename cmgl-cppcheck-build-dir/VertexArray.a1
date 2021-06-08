@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="3230153465">
+        <error id="unreadVariable" severity="style" msg="Variable &apos;offset&apos; is assigned a value that is never used." verbose="Variable &apos;offset&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\dev\Perigord\src\Renderer\OpenGL\VertexArray.cpp" file="C:\dev\Perigord\src\Renderer\OpenGL\VertexArray.cpp" line="18" column="18"/>
+            <symbol>offset</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;offset&apos; is assigned a value that is never used." verbose="Variable &apos;offset&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\dev\Perigord\src\Renderer\OpenGL\VertexArray.cpp" file="C:\dev\Perigord\src\Renderer\OpenGL\VertexArray.cpp" line="25" column="10"/>
+            <symbol>offset</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="VertexBufferElement" file="C:/dev/Perigord/src/Renderer/OpenGL/VertexBufferLayout.hpp" line="5" col="1" hash="1475611774076647030"/>
+<class name="VertexArray" file="C:/dev/Perigord/src/Renderer/OpenGL/VertexArray.hpp" line="6" col="1" hash="18281287447172548833"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="addBuffer" lineNumber="13"/>
+    <functiondecl functionName="bind" lineNumber="29"/>
+    <functiondecl functionName="unbind" lineNumber="30"/>
+    <functioncall functionName="GL_FLOAT"/>
+    <functioncall functionName="GL_UNSIGNED_BYTE"/>
+    <functioncall functionName="GL_UNSIGNED_INT"/>
+    <functioncall functionName="GetElements"/>
+    <functioncall functionName="GetSizeOfType"/>
+    <functioncall functionName="GetStride"/>
+    <functioncall functionName="VertexArray"/>
+    <functioncall functionName="__debugbreak"/>
+    <functioncall functionName="bind"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="const"/>
+    <functioncall functionName="count"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="glBindVertexArray"/>
+    <functioncall functionName="glDeleteVertexArrays"/>
+    <functioncall functionName="glEnableVertexAttribArray"/>
+    <functioncall functionName="glGenVertexArrays"/>
+    <functioncall functionName="glVertexAttribPointer"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="m_RendererID"/>
+    <functioncall functionName="m_Stride"/>
+    <functioncall functionName="normalized"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="size"/>
+    <functioncall functionName="static_assert"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="type"/>
+  </FileInfo>
+</analyzerinfo>

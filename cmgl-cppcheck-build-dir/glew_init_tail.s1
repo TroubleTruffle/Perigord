@@ -1,0 +1,3 @@
+glewGetErrorString call:[sizeof]
+glewGetString call:[sizeof]
+glewInit call:[glewContextInit,glxewInit] noreturn:[glxewInit]

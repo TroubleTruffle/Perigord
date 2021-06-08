@@ -1,0 +1,3 @@
+parseShader call:[close,fragment,getline,is_open,make_tuple,str,vertex] noreturn:[make_tuple]
+compileShader call:[_malloca,assert,c_str,glCompileShader,glCreateShader,glDeleteShader,glGetShaderInfoLog,glGetShaderiv,glShaderSource,sizeof]
+createShader call:[compileShader,glAttachShader,glCreateProgram,glDeleteShader,glLinkProgram,glValidateProgram]
